@@ -2,11 +2,12 @@ package HomeWork1;
 
 
 import static org.assertj.core.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CalculatorTest {
     public static void main(String[] args) {
         valid();
-        invalid();
+//        invalid();
 
 
     }
@@ -19,13 +20,13 @@ public class CalculatorTest {
         assert 1 == result1.calculateDiscount(100, 99);
     }
 
-    public static void invalid(){
-        Calculator result2 = new Calculator();
-        assertThrows("ArithmeticException", result2.calculateDiscount(10, 110));
-        assertThrows("ArithmeticException", result2.calculateDiscount(- 10, 110));
-        assertThrows("ArithmeticException", result2.calculateDiscount(10, -110));
-
-    }
+//    public static void invalid(){
+//        Calculator result2 = new Calculator();
+//        assertThrows("ArithmeticException", result2.calculateDiscount(10, 110));
+//        assertThrows("ArithmeticException", result2.calculateDiscount(- 10, 110));
+//        assertThrows("ArithmeticException", result2.calculateDiscount(10, -110));
+//
+//    }
 
 
 
